@@ -36,23 +36,29 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-8 py-28 bg-slate-100">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-black mb-3 tracking-tight">Featured <span className="text-purple-500">Projects</span></h2>
-        <p className="text-gray-500 mb-14 text-lg">A selection of my recent work focusing on AI integration and software architecture.</p>
+    <section id="projects" className="relative px-8 py-28 bg-slate-950 overflow-hidden border-t border-slate-900">
+      {/* Subtle Aurora for Projects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-40 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-20 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[100px]" />
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <h2 className="text-5xl font-black mb-3 tracking-tight text-white">Featured <span className="text-purple-400">Projects</span></h2>
+        <p className="text-slate-400 mb-14 text-lg">A selection of my recent work focusing on AI integration and software architecture.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((p, i) => (
-            <div key={i} className="group rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white">
+            <div key={i} className="group rounded-2xl overflow-hidden border border-slate-800/50 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 bg-slate-900/50 backdrop-blur-sm">
               <div className="h-52 overflow-hidden relative">
-                <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+                <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90 group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80" />
               </div>
-              <div className="p-6 bg-gray-900 text-white">
-                <h3 className="text-xl font-bold mb-2">{p.title}</h3>
-                <p className="text-gray-400 text-sm mb-5 leading-relaxed">{p.desc}</p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-white">{p.title}</h3>
+                <p className="text-slate-400 text-sm mb-5 leading-relaxed">{p.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-5">
                   {p.tags.map((t, j) => (
-                    <span key={j} className="text-xs border border-gray-600 text-gray-300 px-3 py-1 rounded-full font-medium">{t}</span>
+                    <span key={j} className="text-xs border border-slate-700 text-slate-300 px-3 py-1 rounded-full font-medium bg-slate-800/50">{t}</span>
                   ))}
                 </div>
                 <a

@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="bg-slate-50 text-slate-900 font-sans overflow-x-hidden">
+    <div className="bg-slate-950 text-slate-200 font-sans overflow-x-hidden">
       <Navbar />
       <Hero />
       <Projects />
