@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Employee Salary Prediction",
     desc: "End to end web application predicting employee salaries in Indonesia based on UMR history and experience.",
-    tags: ["Python", "FastAPI", "React", "Scikit-learn"],
+    tags: ["Python", "FastAPI", "React", "Scikit learn"],
     image: mlImage,
     link: "https://aol-ml.vercel.app/",  
   },
