@@ -2,6 +2,7 @@ import mlImage from '../assets/ML.png'
 import comvisImage from '../assets/Comvis.png'
 import bookugerImage from '../assets/Bookuger.png'
 import nlpImage from '../assets/nlp.png'
+import stockImage from '../assets/Stock.png'
 
 const projects = [
   {
@@ -36,7 +37,7 @@ const projects = [
     title: "IHSG Stock Tracker & Analysis",
     desc: "Full-stack web application for real-time IHSG stock analysis. Features interactive charts (MA-7 indicators), automated risk management calculators, and a robust async architecture bridging React and Python.",
     tags: ["React", "Python", "Pandas", "Gradio API", "yfinance"],
-    image: "./assets/Stock.png",
+    image: stockImage,
     link: "https://stock-tracker-bay-three.vercel.app/",
   },
 ]
