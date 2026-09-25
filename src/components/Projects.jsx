@@ -34,8 +34,8 @@ const projects = [
     link: "https://aol-nlp.vercel.app/", 
   },
   {
-    title: "IHSG Stock Tracker & Analysis",
-    desc: "Full stack web application for real time IHSG stock analysis. Features interactive charts (MA-7 indicators), automated risk management calculators, and a robust async architecture bridging React and Python.",
+    title: "Stock Tracker & Analysis",
+    desc: "Full stack web application for real time stock analysis. Features interactive charts (MA-7 indicators), automated risk management calculators, and a robust async architecture bridging React and Python.",
     tags: ["React", "Python", "Pandas", "Gradio API", "yfinance"],
     image: stockImage,
     link: "https://stock-tracker-bay-three.vercel.app/",
