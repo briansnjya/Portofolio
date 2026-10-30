@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="w-full lg:w-3/5 text-center lg:text-left">
           <span className="anim-fade-up inline-block bg-slate-800/50 backdrop-blur border border-slate-700/50 text-sm px-4 py-2 rounded-full mb-6">
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold">
-              Computer Science @BINUS University | Intelligent Systems
+              Computer Science @BINUS University | Intelligent Systems | Academic Mentor @BINUS University
             </span>
           </span>
 
