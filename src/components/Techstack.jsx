@@ -9,7 +9,7 @@ const stacks = [
     icon: "🖥️",
     title: "Web Development",
     color: "from-purple-500 to-purple-700",
-    items: ["React", "FastAPI", "Uvicorn", "C#", "ASP.NET", "Tailwind CSS"],
+    items: ["React", "FastAPI", "Uvicorn", "ASP.NET", "Tailwind CSS"],
   },
   {
     icon: "🗄️",
