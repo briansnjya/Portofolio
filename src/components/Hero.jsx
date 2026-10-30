@@ -1,5 +1,10 @@
 import profileImg from '../assets/profile.jpeg'
 
+const links = {
+  github: 'https://github.com/briansnjya',
+  linkedin: 'https://www.linkedin.com/in/brian-sanjaya-825799325/',            
+  cv: '/BrianSanjayaHalim_CV.pdf',     
+}
 
 
 export default function Hero() {
@@ -63,7 +68,7 @@ export default function Hero() {
             )}
             {links.cv && (
               <a href={links.cv} download className="hover:text-white underline underline-offset-4 decoration-slate-600 hover:decoration-white transition-colors">
-                Download CV
+                CV
               </a>
             )}
           </div>

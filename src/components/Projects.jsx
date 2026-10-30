@@ -61,7 +61,7 @@ function ProjectCard({ p, wide }) {
         wide ? "md:flex-row" : ""
       }`}
     >
-    
+      {/* Gambar: rasio seragam supaya semua card rapi */}
       <div className={`relative overflow-hidden aspect-video ${wide ? "md:aspect-auto md:w-1/2" : ""}`}>
         <img
           src={p.image}
@@ -95,7 +95,7 @@ function ProjectCard({ p, wide }) {
           ))}
         </div>
 
-        
+        {/* mt-auto: tombol selalu menempel di bawah card */}
         <div className="mt-auto flex flex-wrap items-center gap-3">
           <a
             href={p.link}
@@ -123,7 +123,7 @@ function ProjectCard({ p, wide }) {
 }
 
 export default function Projects() {
-
+  // Kalau jumlah project ganjil, card terakhir dibuat lebar supaya grid tidak bolong
   const lastIsWide = projects.length % 2 === 1
 
   return (
