@@ -14,7 +14,7 @@ const experiences = [
 export default function Experience() {
   return (
     <section id="experience" className="relative px-8 py-28 bg-slate-950 overflow-hidden border-t border-slate-900">
-      {/* Subtle glowing center */}
+    
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-pink-500/5 rounded-full blur-[100px]" />
       </div>

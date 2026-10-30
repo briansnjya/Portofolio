@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Driver Drowsiness Detection",
     desc: "Computer vision system using YOLOv8 and Haar Cascade for real time driver drowsiness and traffic violation detection.",
-    tags: ["OpenCV", "YOLOv8", "Deep Learning"],
+    tags: ["OpenCV", "YOLOv8", "Deep Learning", "React", "Python"],
     image: comvisImage,
     link: "https://aol-comvis.vercel.app/",
     github: "",
@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Bookuger Library System",
     desc: "Modern library management information system featuring UI/UX design, comprehensive UML architecture, and barcode scanning logic.",
-    tags: ["C#", "ASP.NET", "Figma", "Lucidchart"],
+    tags: ["React", "ASP.NET", "Figma", "Lucidchart"],
     image: bookugerImage,
     link: "https://aol-se-cuy.vercel.app/login",
     github: "",
@@ -61,7 +61,7 @@ function ProjectCard({ p, wide }) {
         wide ? "md:flex-row" : ""
       }`}
     >
-      {/* Gambar: rasio seragam supaya semua card rapi */}
+    
       <div className={`relative overflow-hidden aspect-video ${wide ? "md:aspect-auto md:w-1/2" : ""}`}>
         <img
           src={p.image}
@@ -95,7 +95,7 @@ function ProjectCard({ p, wide }) {
           ))}
         </div>
 
-        {/* mt-auto: tombol selalu menempel di bawah card */}
+        
         <div className="mt-auto flex flex-wrap items-center gap-3">
           <a
             href={p.link}
@@ -123,7 +123,7 @@ function ProjectCard({ p, wide }) {
 }
 
 export default function Projects() {
-  // Kalau jumlah project ganjil, card terakhir dibuat lebar supaya grid tidak bolong
+
   const lastIsWide = projects.length % 2 === 1
 
   return (

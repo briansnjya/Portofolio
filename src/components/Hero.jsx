@@ -1,22 +1,15 @@
 import profileImg from '../assets/profile.jpeg'
 
-// Isi URL-nya kalau sudah ada, link otomatis muncul. Kosongkan untuk menyembunyikan.
-const links = {
-  github: "",
-  linkedin: "",
-  cv: "",
-}
+
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-8 pt-24 pb-16 bg-slate-950 overflow-hidden">
-      {/* Aurora background: hanya dua blob, satu yang berdenyut pelan */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px]" />
         <div className="absolute bottom-10 left-10 w-[600px] h-[600px] bg-purple-500/20 rounded-full blur-[120px] animate-pulse motion-reduce:animate-none" />
       </div>
 
-      {/* max-w-6xl sama dengan section Projects; samakan juga di Navbar supaya garis kirinya sejajar */}
       <div className="max-w-6xl mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-16 z-10">
 
         {/* TEXT SIDE */}
@@ -56,7 +49,7 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Link cepat untuk recruiter; hanya tampil yang URL-nya terisi */}
+      
           <div className="anim-fade-up flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-slate-400" style={{ animationDelay: '400ms' }}>
             {links.github && (
               <a href={links.github} target="_blank" rel="noopener noreferrer" className="hover:text-white underline underline-offset-4 decoration-slate-600 hover:decoration-white transition-colors">
@@ -76,13 +69,13 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* IMAGE SIDE */}
+        
         <div className="anim-fade-in w-full lg:w-2/5 flex justify-center" style={{ animationDelay: '200ms' }}>
           <div className="relative w-52 h-52 md:w-72 md:h-72 lg:w-80 lg:h-80">
-            {/* Glow statis di belakang foto (tidak berdenyut, supaya tidak ramai) */}
+          
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-full blur-2xl opacity-40" />
 
-            {/* Ring gradien */}
+    
             <div className="relative w-full h-full rounded-full p-1.5 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 shadow-xl">
               <div className="w-full h-full rounded-full overflow-hidden bg-slate-950 border-4 border-slate-950">
                 <img
